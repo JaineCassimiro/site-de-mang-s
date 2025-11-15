@@ -1,0 +1,122 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header/Navegação */
+header {
+    background-color: #e3002a; /* Cor Vermelha Típica de Mangás */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700; /* Dourado no hover */
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px 30px;
+}
+
+.destaque {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.destaque h1 {
+    color: #e3002a;
+    margin-bottom: 10px;
+}
+
+/* Grid de Mangás */
+.lista-mangas h2 {
+    border-bottom: 2px solid #e3002a;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #e3002a;
+}
+
+.grid-mangas {
+    display: grid;
+    /* 4 colunas em telas maiores, mínimo de 250px por card */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+}
+
+/* Estilo do Card de Mangá */
+.manga-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.manga-card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.manga-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 2 / 3; /* Proporção de capa de mangá */
+    object-fit: cover;
+}
+
+.manga-info {
+    padding: 15px 10px;
+}
+
+.manga-info h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.manga-info p {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
